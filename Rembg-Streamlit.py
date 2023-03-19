@@ -7,10 +7,12 @@ from io import BytesIO
 
 def main():
     st.title("Arka Plan Kaldırma")
+    st.write(
+    ":dog: Resmi yükle ve arka plan kalksın. Tek yapman gerelen indirme düğmesine basman :grin:")
     st.sidebar.write("## Upload and download :gear:")
     col1, col2 = st.columns(2)
 
-    uploaded_files = st.sidebar.file_uploader("Arka planını kaldırmak istediğiniz resimleri seçin", accept_multiple_files=True)
+    uploaded_files = st.sidebar.file_uploader("Arka planını kaldırmak istediğin resimleri seç", accept_multiple_files=True)
 
     if uploaded_files is not None:
         for uploaded_file in uploaded_files:
