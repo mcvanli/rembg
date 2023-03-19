@@ -6,9 +6,10 @@ import urllib.request
 from io import BytesIO
 
 def main():
-    col1, col2,col3 = st.columns(3)
+    
     st.title("Arka Plan Kaldırma")
     st.write("Resmi yükle ve arka plan kalksın. Tek yapman gerelen indirme düğmesine basman :cat:")
+    col1, col2,col3 = st.columns(3)
     col1.write("## Yükle, Düzelt ve İndir :gear:")
     
     uploaded_files = col1.file_uploader("Arka planını kaldırmak istediğin resimleri seç", accept_multiple_files=True)
