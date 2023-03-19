@@ -6,7 +6,7 @@ import urllib.request
 from io import BytesIO
 
 def main():
-    
+    st.set_page_config(layout="wide", page_title="Arka Plan Kaldırma")
     st.title("Arka Plan Kaldırma")
     st.write("Resmi yükle ve arka plan kalksın. Tek yapman gerelen indirme düğmesine basman :cat:")
     col1, col2 = st.columns(2)
