@@ -1,6 +1,6 @@
 import streamlit as st
 import rembg
-from rembg import Remove
+from rembg import remove
 from PIL import Image
 import urllib.request
 from io import BytesIO
