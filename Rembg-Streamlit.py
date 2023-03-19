@@ -9,7 +9,7 @@ def main():
     st.title("Arka Plan Kaldırma")
     st.sidebar.write("## Upload and download :gear:")
 
-    uploaded_files = st.file_uploader("Arka planını kaldırmak istediğiniz resimleri seçin", accept_multiple_files=True)
+    uploaded_files = st.sidebar.file_uploader("Arka planını kaldırmak istediğiniz resimleri seçin", accept_multiple_files=True)
 
     if uploaded_files is not None:
         for uploaded_file in uploaded_files:
