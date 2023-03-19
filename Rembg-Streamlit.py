@@ -7,6 +7,7 @@ from io import BytesIO
 
 def main():
     st.title("Arka Plan Kaldırma")
+    st.sidebar.write("## Upload and download :gear:")
 
     uploaded_files = st.file_uploader("Arka planını kaldırmak istediğiniz resimleri seçin", accept_multiple_files=True)
 
