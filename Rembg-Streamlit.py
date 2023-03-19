@@ -27,7 +27,7 @@ def main():
             st.image(image_data, caption=f'Processed Image: {uploaded_file.name}', use_column_width=True)
 
             # Download the processed image
-            st.download_button(f'Download processed image: {uploaded_file.name}', download_image(image_data, uploaded_file.name), f'processed_{uploaded_file.name}')
+            st.sidebar.download_button(f'Download processed image: {uploaded_file.name}', download_image(image_data, uploaded_file.name), f'processed_{uploaded_file.name}')
 
 def download_image(image_data, filename):
     with BytesIO() as buffer:
