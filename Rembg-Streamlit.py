@@ -1,5 +1,5 @@
 import streamlit as st
-from rembg import remove
+import rembg
 from PIL import Image
 import urllib.request
 from io import BytesIO
