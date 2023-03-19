@@ -7,8 +7,7 @@ from io import BytesIO
 
 def main():
     st.title("Arka Plan Kaldırma")
-    st.write(
-    ":dog: Resmi yükle ve arka plan kalksın. Tek yapman gerelen indirme düğmesine basman :grin:")
+    st.write("Resmi yükle ve arka plan kalksın. Tek yapman gerelen indirme düğmesine basman :cat:")
     st.sidebar.write("## Upload and download :gear:")
     col1, col2 = st.columns(2)
 
